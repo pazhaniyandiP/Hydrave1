@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HydraMove – Daily Health Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>HydraMove – Daily Wellness Assistant</h1>
+  <p class="tag">Hydration • Movement • Eyes • Focus • Balance</p>
+
+  <div class="settings">
+    <label>Enter your weight (kg):</label>
+    <input type="number" id="weightInput" placeholder="e.g., 60">
+
+    <button id="setGoalBtn">Set Water Goal</button>
+
+    <label><input type="checkbox" id="parentMode"> Enable Study/Parent Mode</label>
+  </div>
+
+  <h2>Live Health Status</h2>
+  <div id="cards">
+
+    <div class="card">
+      <h3>💧 Water</h3>
+      <p id="waterStatus">Tracking...</p>
+      <p id="waterGoalDisplay"></p>
+    </div>
+
+    <div class="card">
+      <h3>🧍 Movement</h3>
+      <p id="moveStatus">Tracking...</p>
+    </div>
+
+    <div class="card">
+      <h3>👀 Eye Rest</h3>
+      <p id="eyeStatus">Tracking...</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Stress Level</h3>
+      <p id="stressStatus">Calculating...</p>
+    </div>
+
+  </div>
+
+  <div id="suggestion">Start working normally. We will take care of reminders.</div>
+
+  <h2>📊 Daily Summary</h2>
+  <div id="history"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
